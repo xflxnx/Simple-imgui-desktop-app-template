@@ -1,0 +1,14 @@
+﻿  ImguiDesktopTemplate.cpp
+C:\Users\gsmol\source\repos\ImguiDesktopTemplate\ImguiDesktopTemplate\ImguiDesktopTemplate.cpp(81,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_stdlib.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  Generating Code...
+ImguiDesktopTemplate.obj : error LNK2019: unresolved external symbol D3D11CreateDeviceAndSwapChain referenced in function "bool __cdecl CreateDeviceD3D(struct HWND__ *)" (?CreateDeviceD3D@@YA_NPEAUHWND__@@@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\gsmol\source\repos\ImguiDesktopTemplate\x64\Debug\ImguiDesktopTemplate.exe : fatal error LNK1120: 2 unresolved externals

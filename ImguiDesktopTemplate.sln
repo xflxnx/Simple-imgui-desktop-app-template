@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImguiDesktopTemplate", "ImguiDesktopTemplate\ImguiDesktopTemplate.vcxproj", "{FCE52509-E4CB-4F7A-838C-3B22283F41BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Debug|x64.ActiveCfg = Debug|x64
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Debug|x64.Build.0 = Debug|x64
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Debug|x86.Build.0 = Debug|Win32
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Release|x64.ActiveCfg = Release|x64
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Release|x64.Build.0 = Release|x64
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Release|x86.ActiveCfg = Release|Win32
+		{FCE52509-E4CB-4F7A-838C-3B22283F41BC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5555D5B-56B3-45B1-A968-D46620A14BBC}
+	EndGlobalSection
+EndGlobal
