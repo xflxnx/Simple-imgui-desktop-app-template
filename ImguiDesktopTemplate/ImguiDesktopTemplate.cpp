@@ -12,16 +12,10 @@
 #include <atomic>
 
 namespace windowSettings {
-    float windowWidth = 500;
-    float windowHeight = 450;
-    LPCWSTR WindowName = L"Window Name";
-    float windowRounding = 9.0f;
-}
-
-
-inline ImVec4 col255to1(int r, int g, int b, float a255)
-{
-    return ImVec4(r / 255.0f, g / 255.0f, b / 255.0f, a255 / 255.0f);
+    float windowWidth = 500; // your window width
+    float windowHeight = 450; // your window height
+    LPCWSTR WindowName = L"Window Name"; // your window name
+    float windowRounding = 9.0f; // your window rounding
 }
 
 static ID3D11Device* g_pd3dDevice = nullptr;
@@ -80,15 +74,14 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
 
     // io.FontDefault = fontCyr; // here should be your compressed font
 
-    ImGuiStyle& st = ImGui::GetStyle();
+    ImGuiStyle& st = ImGui::GetStyle(); // style for your window
     st.WindowBorderSize = 0.0f;
-    st.Colors[ImGuiCol_Border] = ImVec4(col255to1(255, 255, 255, 25));
-    st.Colors[ImGuiCol_TextSelectedBg] = ImVec4(0, 0, 0, 0.3f);
     st.WindowRounding = 9.0f;
     st.WindowPadding = ImVec2(5.0f, 5.0f);
     st.FramePadding = ImVec2(5.0f, 5.0f);
     st.ItemSpacing = ImVec2(5.0f, 5.0f);
-    st.Colors[ImGuiCol_WindowBg] = ImGui::ColorConvertU32ToFloat4(IM_COL32(20, 20, 20, 255));
+    st.Colors[ImGuiCol_Border] = ImGui::ColorConvertU32ToFloat4(IM_COL32(0, 0, 0, 0));
+    st.Colors[ImGuiCol_WindowBg] = ImGui::ColorConvertU32ToFloat4(IM_COL32(100, 100, 100, 255));
     st.Colors[ImGuiCol_Text] = ImGui::ColorConvertU32ToFloat4(IM_COL32(255, 255, 255, 205));
     ImGui_ImplWin32_Init(hwnd);
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
@@ -130,7 +123,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
         ImGui::SetNextWindowSize(io.DisplaySize);
         ImGui::Begin("Window name", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings);
 
-        //YOUR GUI HERE
+        //your gui here
 
         ImGui::End();
         ImGui::Render();
