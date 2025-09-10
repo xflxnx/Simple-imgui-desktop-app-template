@@ -9,7 +9,9 @@
 > 4. At properties > Linker > Input > Additional Dependencies add _d3d11.lib_
 > 5. If it not working, select C++17 Standart in properties > General > C++ Language Standart
 
-Or you can just use this solution.
+> *Or you can just use this solution.*
+
+<hr></hr>
 
 > **Compatibility**
 
