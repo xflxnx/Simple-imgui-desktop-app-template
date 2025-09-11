@@ -1,5 +1,5 @@
 # Simple imgui desktop app template
-### A clean, minimal, and straightforward template to create your desktop application projects using Dear ImGui. Perfect for beginners and rapid prototyping.
+**A clean, minimal, and straightforward template to create your desktop application projects using Dear ImGui. Perfect for beginners and rapid prototyping.**
 
 > **How to use**
 
